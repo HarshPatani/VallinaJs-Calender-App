@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  background-color: #fffcff;
+}
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: white;
+  background-color: #4471c4;
+}
+
+#header {
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #4471c4;
+  font-size: 26px;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+
+#container {
+  max-width: 770px;
+}
+#weekdays {
+  width: 100%;
+  display: flex;
+  color: black;
+}
+#weekdays div {
+  width: 110px;
+  padding: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+  border: 1px solid black;
+  margin-right: 5px;
+  margin-left: 5px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+#calendar {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.day {
+  width: 100px;
+  padding: 10px;
+  height: 100px;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: white;
+  margin: 5px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.day:hover {
+  background-color: #00af50;
+}
+
+.padding {
+  cursor: default !important;
+  background-color: #fffcff !important;
+  box-shadow: none !important;
+}
+.inputDay {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.inputDay input {
+  min-width: 250px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
